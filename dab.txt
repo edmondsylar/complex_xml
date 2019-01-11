@@ -1,0 +1,70 @@
+fileds = []
+                data = {key:value}
+                fileds.append(data)
+
+
+                tables = {
+                    'firstName':'t_sdn_firstname',
+                    'remarks':'t_sdn_remarks',
+                    'program':'t_sdn_programList',
+                    'idType':'t_sdn_idList_idType',
+                    'idNumber':'t_sdn_idList_idNumber',
+                    'idCountry':'t_sdn_idList_idCountry',
+                    'issueDate':'t_sdn_idList_issueDate',
+                    'expirationDate':'t_sdn_idList_expirationDate',
+                    'aka':'t_sdn_akaList',
+                    'address1':'t_sdn_addressList_address1',
+                    'address2':'t_sdn_addressList_address2',
+                    'address3':'t_sdn_addressList_address3',
+                    'city':'t_sdn_addressList_city',
+                    'stateOrProvince':'t_sdn_addressList_stateorProvince',
+                    'postalCode':'t_sdn_addressList_postalCode',
+                    'nationality':'t_sdn_nationalityList',
+                    'citizenship':'t_sdn_citizenshipList',
+                    'dateOfBirthItem':'t_sdn_dateOfBirthList',
+                    'placeOfBirthItem':'t_sdn_placeOfBirthList',
+                    'vesselInfo':'t_sdn_vesselInfo',
+                    'callSign':'t_sdn_vesselInfo_callSign',
+                    'vesselType':'t_sdn_vesselInfo_vesselType',
+                    'vesselFlag':'t_sdn_vesselInfo_vesselFlag',
+                    'vesselOwner':'t_sdn_vesselInfo_vesselOwner',
+                    'vesselTypetonnage':'t_sdn_vesselInfo_tonnage',
+                    'grossRegisteredTonnage':'t_sdn_vesselInfo_grossRegisteredTonnage'
+                }
+
+
+
+                tables
+                1. t_sdn_entry [sdnEntryUuid, sdnUid, lastName, sdnType, timeStamp,fetchedInformationUid]
+                2. t_sdn_firstname [sdnFirstNameUuid, sdnUid, firstName, timeStamp, fetchedInformationUid] - firstName
+                3. t_sdn_title [sdnTitleUuid, sdnEntryUid, title, timeStamp, fetchedInformationUid] - title
+                4. t_sdn_remarks [sdnRemarksUuid, sdnUid, remarks, timeStamp, fetchedInformationUid] - remarks
+                5. t_sdn_programList [sdnProgramListUid, sdnUid, program, timeStamp, fetchedInformationUid] - program
+                6. t_sdn_idList [sdnIdListUuid, sdnUid, idUid, timeStamp, fetchedInformationUid] - (id) uid
+                7. t_sdn_idList_idType [sdnIdTypeUuid, sdnUid, idUid, idType, timeStamp, fetchedInformationUid] - idType
+                8. t_sdn_idList_idNumber [sdnIdNumberUuid, sdnUid, idUid, idNumber, timeStamp, fetchedInformationUid] - idNumber
+                9. t_sdn_idList_idCountry [sdnIdCountryUuid, sdnUid, idUid, idCountry, timeStamp, fetchedInformationUid] - idCountry
+                10. t_sdn_idList_issueDate [sdnIdIssueDateUuid, sdnUid, idUid, issueDate, timeStamp, fetchedInformationUid] - issueDate
+                11. t_sdn_idList_expirationDate [sdnExpirationDateUuid, sdnUid, idUid, expirationDate, timeStamp, fetchedInformationUid] - expirationDate
+                12. t_sdn_akaList [sdnAkaListUuid, sdnUid, akaUid, akaType, akaCategory, timeStamp, fetchedInformationUid] - aka
+                13. t_sdn_akaList_lastName [sdnAkaLastNameUuid, sdnUid, akaUid, akaLastName, timeStamp, fetchedInformationUid] - (aka) lastName
+                14. t_sdn_akaList_firstName [sdnAkaFirstNameUuid, sdnUid, akaUid, akaFfirstName, timeStamp, fetchedInformationUid] - (aka) firstName
+                15. t_sdn_addressList [sdnAddressListUuid, sdnUid, addressUid, timeStamp, fetchedInformationUid] - (address) uid
+                16. t_sdn_addressList_address1 [sdnAddress1Uuid, sdnUid, addressUid, address1, timeStamp, fetchedInformationUid] - address1
+                17. t_sdn_addressList_address2 [sdnAddress2Uuid, sdnUid, addressUid, address2, timeStamp, fetchedInformationUid] - address2
+                18. t_sdn_addressList_address3 [sdnAddress3Uuid, sdnUid, addressUid, address3, timeStamp, fetchedInformationUid] - address3
+                19. t_sdn_addressList_city [sdnAddressCityUuid, sdnUid, addressUid, city, timeStamp, fetchedInformationUid] - city
+                20. t_sdn_addressList_stateorProvince [sdnAddressStateOrProvinceUuid, sdnUid, addressUid, stateOrProvince, timeStamp, fetchedInformationUid] - stateOrProvince
+                21. t_sdn_addressList_postalCode [sdnAddressPostalCodeUuid, sdnUid, addressUid, postalCode, timeStamp, fetchedInformationUid] - postalCode
+                22. t_sdn_addressList_country [sdnAddressCountryUuid, sdnUid, addressUid, country, timeStamp, fetchedInformationUid] - (address) country
+                23. t_sdn_nationalityList [sdnNationalityListUuid, sdnUid, nationalityUid, country, mainEntry, timeStamp, fetchedInformationUid] - nationality
+                24. t_sdn_citizenshipList [sdnCitizenshipListUuid, sdnUid, citizenshipUid, country, mainEntry, timeStamp, fetchedInformationUid] - citizenship
+                24. t_sdn_dateOfBirthList [sdnDateOfBirthListUuid, sdnUid, dateOfBirthUid, dateOfBirth, mainEntry, timeStamp, fetchedInformationUid] - dateOfBirthItem
+                25. t_sdn_placeOfBirthList [sdnPlaceOfBirthListUuid, sdnUid, placeOfBirthUid, placeOfBirth, mainEntry, timeStamp, fetchedInformationUid] - placeOfBirthItem
+                26. t_sdn_vesselInfo [sdnVesselInfoUuid, sdnUid, timeStamp, fetchedInformationUid] - vesselInfo
+                27. t_sdn_vesselInfo_callSign [sdnCallSignUuid, sdnVesselInfoUuid, sdnUid, callSign, timeStamp, fetchedInformationUid] - callSign
+                28. t_sdn_vesselInfo_vesselType [sdnVesselTypeUuid, sdnVesselInfoUuid, sdnUid, vesselType, timeStamp, fetchedInformationUid] - vesselType
+                29. t_sdn_vesselInfo_vesselFlag [sdnVesselFlagUuid, sdnVesselInfoUuid, sdnUid, vesselFlag, timeStamp, fetchedInformationUid] - vesselFlag
+                30. t_sdn_vesselInfo_vesselOwner [sdnVesselOwnerUuid, sdnVesselInfoUuid, sdnUid, vesselOwner, timeStamp, fetchedInformationUid] - vesselOwner
+                31. t_sdn_vesselInfo_tonnage [sdnTonnageUuid, sdnVesselInfoUuid, sdnUid, tonnage, timeStamp, fetchedInformationUid] - vesselTypetonnage
+                32. t_sdn_vesselInfo_grossRegisteredTonnage [sdnGrossRegisteredTonnageUuid, sdnVesselInfoUuid, sdnUid, grossRegisteredTonnage, timeStamp, fetchedInformationUid] - grossRegisteredTonnage
